@@ -1,0 +1,115 @@
+.header {
+	padding: toRem(30) 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: #fff;
+	@media (max-width: $tablet) {
+		padding: toRem(15) 0;
+	}
+	&__container {
+		display: flex;
+		gap: toRem(40);
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo-wrapper {
+		@media (max-width: $mobile) {
+			position: relative;
+			z-index: 5;
+		}
+	}
+	&__logo {
+		@media (any-hover: hover) {
+			transition: transform 0.3s;
+			&:hover {
+				transform: scale(1.02);
+			}
+		}
+		img {
+			max-width: toRem(260);
+		}
+	}
+	&__actives {
+		display: flex;
+		align-items: center;
+		@media (min-width: $tablet) {
+			gap: toRem(40);
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			gap: toRem(15);
+		}
+	}
+	&__call {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(5);
+	}
+	&__call-label {
+	}
+	&__call-link {
+		font-weight: 700;
+	}
+	&__social {
+		display: flex;
+		gap: toRem(7);
+	}
+	&__social-item {
+	}
+	&__social-link {
+		width: toRem(25);
+		height: toRem(25);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #3d3935;
+		transition: background-color 0.3s;
+		font-size: toRem(14);
+		color: #fff;
+		&--youtube {
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: #e32321;
+				}
+			}
+			&::active {
+				background-color: #e32321;
+			}
+		}
+		&--facebook {
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: #0068a6;
+				}
+			}
+			&::active {
+				background-color: #0068a6;
+			}
+		}
+		&--instagram {
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: #e64c74;
+				}
+			}
+			&::active {
+				background-color: #e64c74;
+			}
+		}
+		&--telegram {
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: #6db3df;
+				}
+			}
+			&::active {
+				background-color: #6db3df;
+			}
+		}
+	}
+	&__menu {
+	}
+}

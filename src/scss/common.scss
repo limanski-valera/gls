@@ -1,0 +1,17 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.link {
+	transition: color 0.3s;
+	@media (any-hover: hover) {
+		&:hover {
+			color: $blueActiveColor;
+		}
+	}
+	&:active {
+		color: $blueActiveColor;
+	}
+}
+.title {
+	text-transform: uppercase;
+	color: $brownColor;
+	@include adaptiveValue("font-size", 44, 24);
+}

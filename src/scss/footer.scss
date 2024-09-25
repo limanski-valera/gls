@@ -1,0 +1,157 @@
+//====================================================================================================
+.footer {
+	background-color: #3d2a26;
+	color: #fff;
+	padding: toRem(40) 0 toRem(100);
+	@media (max-width: $mobile) {
+		padding: toRem(30) 0;
+	}
+	&__container {
+		@media (min-width: $mobile) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: toRem(50);
+		}
+		@media (max-width: $mobile) {
+			max-width: toRem(500);
+		}
+	}
+	&__left {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(25);
+		align-items: flex-start;
+		@media (max-width: $mobile) {
+			align-items: center;
+			text-align: center;
+			margin-bottom: toRem(40);
+		}
+	}
+	&__logo {
+		transition: transform 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.02);
+			}
+		}
+		&:active {
+			transform: scale(1.02);
+		}
+		img {
+			max-width: toRem(320);
+			max-height: toRem(50);
+			@media (max-width: $mobile) {
+				width: 100%;
+				max-width: toRem(500);
+				max-height: toRem(80);
+			}
+		}
+		@media (max-width: $mobile) {
+			width: 100%;
+			max-width: toRem(500);
+		}
+	}
+	&__text {
+		max-width: toRem(300);
+		&--small {
+			font-size: toRem(12);
+		}
+	}
+	&__social {
+		display: flex;
+		gap: toRem(7);
+		@media (max-width: $mobile) {
+			max-width: toRem(520);
+			justify-content: center;
+			border-bottom: 1px solid #fff;
+			padding-bottom: toRem(40);
+			width: 100%;
+		}
+	}
+	&__social-item {
+	}
+	&__social-link {
+		width: toRem(25);
+		height: toRem(25);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: toRem(14);
+		background-color: #fff;
+		color: #1d1d1d;
+		transition:
+			background-color 0.3s,
+			color 0.3s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+			}
+		}
+		&._icon-youtube {
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: #e32321;
+				}
+			}
+			&:active {
+				background-color: #e32321;
+			}
+		}
+		&._icon-facebook {
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: #0068a6;
+				}
+			}
+			&:active {
+				background-color: #0068a6;
+			}
+		}
+		&._icon-instagram {
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: #e64c74;
+				}
+			}
+			&:active {
+				background-color: #e64c74;
+			}
+		}
+		&._icon-phone {
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: #6db3df;
+				}
+			}
+			&:active {
+				background-color: #6db3df;
+			}
+		}
+	}
+	&__right {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(25);
+		@media (max-width: $mobile) {
+			text-align: center;
+		}
+	}
+	&__all-logo {
+		img {
+			max-height: toRem(50);
+		}
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: toRem(10);
+		@media (max-width: $mobile) {
+			align-items: center;
+		}
+	}
+	&__contact {
+		font-weight: 700;
+	}
+}
+//====================================================================================================
