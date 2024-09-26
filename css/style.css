@@ -699,9 +699,17 @@ h6 {
     padding-bottom: 22.083333%;
     pointer-events: none
   }
+  .invation__item-decription br {
+    display: none
+  }
   .reviews__list {
     display: grid;
     grid-template-columns: repeat(3,1fr)
+  }
+}
+@media (min-width:47.99875em)and (min-width:62em) {
+  .main-block__title {
+    font-size: 4.5rem
   }
 }
 @media (min-width:61.875em) {
@@ -742,9 +750,6 @@ h6 {
   }
 }
 @media (min-width:62em) {
-  .main-block__title {
-    font-size: 4.5rem
-  }
   .speaker__description {
     font-size: 1.125rem
   }
@@ -959,6 +964,7 @@ h6 {
     margin-bottom: 1.25rem
   }
   .invation__item-decription {
+    line-height: 1.2;
     margin-bottom: 1.25rem
   }
   .mission::before {
@@ -986,11 +992,6 @@ h6 {
 @media (max-width:47.99875em)and (max-width:32.5em) {
   .main-block__title {
     font-size: 2.5rem
-  }
-}
-@media (max-width:32.5em) {
-  .main-block__title {
-    font-size: 1.5rem
   }
 }
 @media (max-width:29.99875em) {
@@ -1062,9 +1063,14 @@ h6 {
     gap: clamp(.9375rem ,.4017857143rem + 2.380952381vw ,1.875rem)
   }
 }
-@media (min-width:32.5em)and (max-width:62em) {
+@media (min-width:47.99875em)and (min-width:32.5em)and (max-width:62em) {
   .main-block__title {
     font-size: clamp(1.5rem ,-1.8050847458rem + 10.1694915254vw ,4.5rem)
+  }
+}
+@media (min-width:47.99875em)and (max-width:32.5em) {
+  .main-block__title {
+    font-size: 1.5rem
   }
 }
 @media (max-width:47.99875em)and (min-width:62em) {
