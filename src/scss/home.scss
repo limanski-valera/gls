@@ -34,7 +34,9 @@
 		color: #fff;
 		line-height: 1.11;
 		align-self: center;
-		@include adaptiveValue('font-size', 72, 24, 0, 992, 520);
+		@media (min-width: $mobile) {
+			@include adaptiveValue('font-size', 72, 24, 0, 992, 520);
+		}
 		@media (max-width: $mobile) {
 			order: 2;
 			@include adaptiveValue('font-size', 72, 40, 0, 992, 520);
@@ -393,7 +395,13 @@
 		flex-direction: column;
 		justify-content: center;
 		@include adaptiveValue('font-size', 18, 12);
+		@media (min-width: $mobile) {
+			br {
+				display: none;
+			}
+		}
 		@media (max-width: $mobile) {
+			line-height: 1.2;
 			margin-bottom: toRem(20);
 		}
 	}
