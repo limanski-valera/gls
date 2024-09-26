@@ -45,7 +45,6 @@
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
-			flex: 1 1 auto;
 			gap: toRem(25);
 			&:not(:last-child) {
 				margin-bottom: toRem(20);
@@ -59,6 +58,7 @@
 	&__link {
 		font-weight: 600;
 		font-size: toRem(16);
+		text-transform: uppercase;
 		@media (max-width: $mobile) {
 			font-size: toRem(20);
 		}
